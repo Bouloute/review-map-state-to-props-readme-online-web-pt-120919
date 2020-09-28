@@ -11,9 +11,10 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+//!!!! APP SHOULD NOT HAVE STORE PROP
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App store={store}/> 
   </Provider>,
   document.getElementById('root')
 );
